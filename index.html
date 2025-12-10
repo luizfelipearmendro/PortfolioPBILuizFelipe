@@ -2,199 +2,159 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio BI - Luiz Felipe</title>
+    <link rel="stylesheet" href="Css/Estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Inicio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: rgb(27, 51, 99);
-        }
-
-        header {
-            background-color: #f8f9fa;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
-
-        h1 {
-            margin-top: 10px;
-            font-size: 45px;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 25px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-
-        nav a:hover {
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            background-color: #dbd10b;
-            color:rgb(27, 51, 99);
-        }
-
-        section {
-            text-align: center;
-        }
-
-        .redes ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-top: 50px;
-        }
-
-        .redes li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        .redes a {
-            text-decoration: none;
-            border-radius: 5px;
-            padding: 8px;
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .redes a:hover {
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            background-color: #dbd10b;
-            color:rgb(27, 51, 99);
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 0 auto;
-            margin-top: 30px;
-        }
-
-        .bloco {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 20px;
-            padding: 20px;
-            width: 300px;
-            text-align: center;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            transition: all 0.5s ease 0s;
-        }
-
-        .bloco h2 {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-
-        .bloco p {
-            margin-top: 10px;
-            font-size: 14px;
-            text-align: left;
-        }
-
-        .bloco button {
-            margin-top: 10px;
-            padding: 8px 16px;
-            background-color: rgb(52, 91, 219);
-            color: #fff;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        .bloco button:hover {
-            background-color: #2980b9;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            font-size: 15px;
-            color:#fff;
-        }
-
-        @media screen and (max-width: 768px) {
-            .container {
-                width: 100%;
-                flex-direction: column;
-            }
-
-            .logo {
-                width: 80%;
-            }
-        }
-    </style>
 </head>
 
 <body>
+
+    <!-- Toggle Tema -->
+    <div class="theme-toggle" id="themeToggle"><i class="bi bi-moon-stars"></i></div>
+
     <header>
-        <img class="logo" src="IMAGENS/agenda.png" alt="Agenda Assessoria">
-        <h1>Agenda Assessoria</h1>
+        <!-- <img class="logo" src="Arquivos/agenda.png" alt="Logo"> -->
+        <h1>Bem-Vindo(a) ao meu<br>Portfólio de Dashboards</h1>
+        <p>Analista de Dados | BI | Power BI | SQL Server | Automação</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-                <li><a href="dashboards.html">Dashboards</a></li>
-                <li><a href="censos.html">Outros</a></li>
-        </ul>
+    <!-- BOTÃO CURRÍCULO -->
+    <div style="text-align:center; margin-top:10px;">
+        <a href="Arquivos/curriculo_24-11-25.pdf" download style="text-decoration:none;">
+            <button
+                style="padding:12px 22px; background:#2388ff; border:none; border-radius:8px; color:white; font-size:16px; cursor:pointer; transition:0.3s;">
+                <i class="bi bi-file-earmark-arrow-down"></i> Baixar Currículo (PDF)
+            </button>
+        </a>
+    </div>
+
+    <nav class="menu">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#skills">Skills</a>
+        <a href="#dashboards">Dashboards</a>
+        <a href="#contato">Contato</a>
     </nav>
 
-    <section>
-        <nav class="redes">
-            <ul>
-                <li><a href="https://www.instagram.com/agendaassessoria/?hl=pt"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/AgendaAssessoria/?locale=pt_BR"><i class="bi bi-facebook"></i></a>
-                </li>
-                <li><a href="https://www.linkedin.com/company/agendaassessoria/mycompany/"><i
-                            class="bi bi-linkedin"></i></a></li>
-                <li><a href="https://www.agendaassessoria.com.br"><i class="bi bi-search"></i></a></li>
-                <li><a href="https://www.google.com/search?q=agenda+assessoria+contato&sca_esv=8619b7244523f828&rlz=1C1GCEU_pt-BRBR1071BR1071&sxsrf=ACQVn09hsDHvTLEmM3eH8E8FOg7dSwojig%3A1707337111487&ei=l-XDZfahHZ3K1sQP7uWX8A0&udm=&ved=0ahUKEwi2yaqwhpqEAxUdpZUCHe7yBd4Q4dUDCBA&uact=5&oq=agenda+assessoria+contato&gs_lp=Egxnd3Mtd2l6LXNlcnAiGWFnZW5kYSBhc3Nlc3NvcmlhIGNvbnRhdG9IvRpQD1itGXAEeAGQAQCYAdYBoAGpDaoBBTAuOS4xuAEDyAEA-AEB4gMEGAAgQYgGAQ&sclient=gws-wiz-serp"><i class="bi bi-whatsapp"></i></a></li>
-            </ul>
-        </nav>
+    <div class="redes">
+        <a href="https://www.instagram.com/aarmendro?igsh=MXE0cWd2aWVwOGwyaw==" target="_blank"><i
+                class="bi bi-instagram"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/luiz-felipe-dias-armendro-07240a260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/luizfelipearmendro" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-box">
+            <p>
+                Olá, me chamo Luiz Felipe, atualmente atuo como Analista de Qualidade de Dados e desenvolvedor de
+                soluções BI.
+                Trabalho com análises, construção de painéis interativos, automações e modelagem de dados.
+                Este portfólio reúne meus principais dashboards desenvolvidos profissionalmente.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills & Tecnologias</h2>
+        <div class="skills-grid">
+            <div class="skill"><i class="bi bi-bar-chart"></i>Power BI</div>
+            <div class="skill"><i class="bi bi-database"></i>SQL Server</div>
+            <div class="skill"><i class="bi bi-file-earmark-code"></i>DAX / M</div>
+            <div class="skill"><i class="bi bi-file-earmark-spreadsheet"></i>Excel Avançado</div>
+        </div>
+    </section>
+
+    <!-- DASHBOARDS -->
+    <section id="dashboards">
+        <h2>Dashboards</h2>
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <img src="Arquivos/palhas_da_soff.png">
+            <h3>Confecções de Palhas Italianas</h3>
+            <p>Painel produzido para J. Soffia, quem confecciona palhas italianas para vender, para ajudá-la no
+                controle de seus lucros e despesas.</p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiODA5ZjYwOGMtYTJlYi00YmRhLWIwMjAtZGEzMGFkOTk1NGViIiwidCI6ImUzMGIwMTUyLTQ4OWMtNDllYS05NGY2LWRiMmNlZDQ0ZDBmZCJ9"
+                target="_blank">
+                <button>Acessar Power BI</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="Arquivos/atendimento_sas.png">
+            <h3>Atendimento SAS</h3>
+            <p>Painel produzido para auxiliar nas analises qualitativas e quantitativas do setor de atendimento ao
+                servidor público.</p>
+            <a href="https://app.powerbi.com/reportEmbed?reportId=0037e6d5-0064-4ccf-bf55-66b8d0a94fff&autoAuth=true&ctid=e30b0152-489c-49ea-94f6-db2ced44d0fd"
+                target="_blank">
+                <button>Acessar Power BI</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="Arquivos/painel_bi.png">
+            <h3>Painel BI</h3>
+            <p>####</p>
+            <a href="#" target="_blank">
+                <button>Acessar Power BI</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="Arquivos/painel_bi.png">
+            <h3>Painel Bi</h3>
+            <p>####</p>
+            <a href="#" target="_blank">
+                <button>Acessar Power BI</button>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="sobre-box">
+            <p>Entre em contato para projetos, consultorias ou colaborações.</p>
+            <p><strong>Email:</strong> <a href="mailto:luizarmendro@gmail.com" target="_blank"
+                    aria-label="email">luizarmendro@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a
+                    href="https://www.linkedin.com/in/luiz-felipe-dias-armendro-07240a260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank">linkedin.com/in/luiz-felipe-dias-armendro</a></p>
+        </div>
     </section>
 
     <footer>
-        <strong>&COPY; 2024 Agenda Assessoria. Todos direitos reservados.</strong>
+        © 2025 - Portfólio Luiz Felipe • Todos os direitos reservados.
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Animação de entrada dos cards
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.2 });
+        cards.forEach(card => observer.observe(card));
+
+        // Alternância de tema claro/escuro
+        const toggle = document.getElementById('themeToggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
 </body>
 
 </html>
