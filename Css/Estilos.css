@@ -41,7 +41,8 @@ header {
 }
 
 header img.logo {
-    width: 120px;
+    width: 150px;
+    border-radius: 50%;
     opacity: 0.9;
     transition: 0.3s;
 }
@@ -61,6 +62,16 @@ header p {
     font-size: 18px;
     color: #9ba7b5;
     margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
 }
 
 /* ===== Menu ===== */
@@ -83,6 +94,13 @@ nav.menu a {
 
 nav.menu a:hover {
     background: #2388ff;
+}
+
+@media (max-width: 768px) {
+    nav.menu {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 /* ===== Redes ===== */
@@ -128,7 +146,7 @@ section p {
     border: 1px solid #21262d;
 }
 
-.sobre-box a{
+.sobre-box a {
     text-decoration: none;
     color: #9ba7b5;
 }
@@ -242,15 +260,15 @@ body.light-mode .theme-toggle {
     color: #000;
 }
 
-body.light-mode .redes a{
+body.light-mode .redes a {
     color: var(--cor-azul-escuro)
 }
 
-body.light-mode .redes a:hover{
+body.light-mode .redes a:hover {
     color: #2388ff
 }
 
-body.light-mode nav.menu a{
+body.light-mode nav.menu a {
     background: #ffffff;
     color: #000;
     border-color: #d0d0d0;
@@ -280,6 +298,55 @@ body.light-mode .card button {
 }
 
 body.light-mode footer,
-body.light-mode .sobre-box p{
+body.light-mode .sobre-box p {
     color: #555;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- botão rolar até o início */
+
+#back-to-top {
+    width: 50px;
+    height: 50px;
+    background-color: #9ba7b5;
+    /* Cor do botão */
+    border-radius: 50%;
+    /* Faz o botão ser uma bolinha */
+    position: fixed;
+    bottom: 60px;
+    /* Distância da parte inferior */
+    right: 100px;
+    /* Distância da lateral direita */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra para destaque */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1001;
+    /* Certifique-se de que o botão fique acima de outros elementos */
+    top: auto;
+}
+
+#back-to-top a:hover {
+    transform: scale(1.1);
+    /* Efeito ao passar o mouse */
+    background-color: #000;
+    /* Cor mais escura no hover */
+}
+
+#back-to-top i {
+    color: #000;
+    /* Cor do ícone */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    #back-to-top {
+        bottom: 20px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+    }
 }
