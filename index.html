@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Css/Estilos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
     </header>
 
     <!-- BOTÃO CURRÍCULO -->
-    <div style="text-align:center; margin-top:10px;">
+    <div style="text-align:center; margin-top:10px;" data-aos="fade-up" data-aos-duration="1000">
         <a href="Arquivos/curriculo_24-11-25.pdf" download style="text-decoration:none;">
             <button
                 style="padding:12px 22px; background:#2388ff; border:none; border-radius:8px; color:white; font-size:16px; cursor:pointer; transition:0.3s;">
@@ -31,14 +32,16 @@
         </a>
     </div>
 
-    <nav class="menu">
+    <nav class="menu" data-aos="fade-up" data-aos-duration="1000">
         <a href="#sobre">Sobre mim</a>
         <a href="#skills">Skills</a>
         <a href="#dashboards">Dashboards</a>
+        <a href="#websites">Web Sites</a>
+        <a href="#aplicacoesweb">Aplicações Web</a>
         <a href="#contato">Contato</a>
     </nav>
 
-    <div class="redes">
+    <div class="redes" data-aos="fade-up" data-aos-duration="1000">
         <a href="https://www.instagram.com/aarmendro?igsh=MXE0cWd2aWVwOGwyaw==" target="_blank"><i
                 class="bi bi-instagram"></i></a>
         <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
@@ -48,7 +51,7 @@
     </div>
 
     <!-- SOBRE MIM -->
-    <section id="sobre">
+    <section id="sobre" data-aos="fade-up" data-aos-duration="1000">
         <h2>Sobre Mim</h2>
         <div class="sobre-box">
             <p>
@@ -56,7 +59,8 @@
                 soluções BI.
                 Trabalho com análises, construção de painéis interativos, automações e modelagem de dados. Apresento a
                 vocês alguns dos dashboards que desenvolvi profissionalmente e outras experiências como, desenvolvimento
-                de softwares, com projetos pessoais e acadêmicos. Busco evoluir profissionalmente, tanto na área de desenvolvimento quanto em análise de dados.
+                de softwares, com projetos pessoais e acadêmicos. Busco evoluir profissionalmente, tanto na área de
+                desenvolvimento quanto em análise de dados.
                 Sinta-se à vontade para explorar meu portfólio!
                 <!-- Este portfólio reúne meus principais dashboards desenvolvidos profissionalmente. -->
             </p>
@@ -64,24 +68,25 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
+    <section id="skills" data-aos="fade-up" data-aos-duration="1000">
         <h2>Skills & Tecnologias</h2>
         <div class="skills-grid">
             <div class="skill"><i class="bi bi-bar-chart"></i>Power BI</div>
-            <div class="skill"><i class="bi bi-database"></i>SQL Server</div>
+            <div class="skill"><i class="bi bi-database"></i>SQL</div>
             <div class="skill"><i class="bi bi-file-earmark-code"></i>DAX / M</div>
             <div class="skill"><i class="bi bi-file-earmark-spreadsheet"></i>Excel Avançado</div>
+            <div class="skill"><i class="bi bi-file-earmark-code"></i>ASP .NET Core</div>
         </div>
     </section>
 
     <!-- DASHBOARDS -->
-    <section id="dashboards">
-        <h2>Dashboards</h2>
+    <section id="dashboards" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Dashboards (Power BI)<span>- Painéis visuais interativos.</span></h2>
     </section>
 
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="card">
-            <img src="Arquivos/palhas_da_soff.png">
+            <img src="Arquivos/palhas_da_soff1.png">
             <h3>Confecções de Palhas Italianas</h3>
             <p>Painel produzido para J. Soffia, quem confecciona palhas italianas para vender, para ajudá-la no
                 controle de seus lucros e despesas.</p>
@@ -92,7 +97,7 @@
         </div>
 
         <div class="card">
-            <img src="Arquivos/atendimento_sas.png">
+            <img src="Arquivos/atendimento_sas1.png">
             <h3>Atendimento SAS</h3>
             <p>Painel produzido para auxiliar nas analises qualitativas e quantitativas do setor de atendimento ao
                 servidor público.</p>
@@ -101,32 +106,94 @@
                 <button>Acessar Power BI</button>
             </a>
         </div>
+    </div>
 
+    <!-- WEB SITES -->
+    <section id="websites" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Web Sites <span>- Apresentar conteúdos, informativo, estático ou dinâmico.</span></h2>
+    </section>
+
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="card">
-            <img src="Arquivos/painel_bi.png">
-            <h3>Painel BI</h3>
-            <p>####</p>
-            <a href="#" target="_blank">
-                <button>Acessar Power BI</button>
+            <img src="Arquivos/mstendas1.png">
+            <h3>M.S. Tendas</h3>
+            <p>Desenvolvido para apresentar serviços, portfólio e facilitar o contato com clientes.</p>
+            <a href="https://mstendas.netlify.app/" target="_blank">
+                <button>Acessar Web Site</button>
             </a>
         </div>
 
         <div class="card">
-            <img src="Arquivos/painel_bi.png">
-            <h3>Painel Bi</h3>
-            <p>####</p>
-            <a href="#" target="_blank">
-                <button>Acessar Power BI</button>
+            <img src="Arquivos/soff1.png">
+            <h3>Soffia Fotografias</h3>
+            <p>Criado para divulgar ensaios, apresentar serviços fotográficos e receber solicitações de orçamento.</p>
+            <a href="https://soffiafotografias.netlify.app/" target="_blank">
+                <button>Acessar Web Site</button>
             </a>
         </div>
 
+        <div class="card">
+            <img src="Arquivos/arcocontents1.png">
+            <h3>Arco Contents</h3>
+            <p>Produzido para fortalecer a presença digital da marca e expor seus principais conteúdos e serviços.</p>
+            <a href="https://arcocontents.netlify.app/" target="_blank">
+                <button>Acessar Web Site</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="Arquivos/psicfernanda1.png">
+            <h3>Dra. Josiana Fernanda Psicóloga</h3>
+            <p>Desenvolvido para apresentar os atendimentos da Psicóloga, especialidades e facilitar o agendamento.</p>
+            <a href="https://drajosianafernandapsic.netlify.app/" target="_blank">
+                <button>Acessar Web Site</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- APLICAÇÕES WEB -->
+    <section id="aplicacoesweb" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Aplicações Web <span>- Softwares interativos que realiza tarefas.</span></h2>
+    </section>
+
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="card">
+            <img src="Arquivos/mstendasapl1.png">
+            <h3>M.S. Tendas</h3>
+            <p>Desenvolvido desenvolvido para atender os requisitos dos sócios da empresa.</p>
+            <a href="https://https://www.mstendas.com.br/" target="_blank">
+                <button>Acessar Aplicação Web</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="Arquivos/imperiofinancas1.png">
+            <h3>Império Finanças</h3>
+            <p>Participei da criação dessa ferramenta idealizada pelo Patrick Braz, para
+                controlar nossas
+                finanças, despesas, rendas e orçamento anual.</p>
+            <a href="https://imperiofinancas.bsite.net/" target="_blank">
+                <button>Acessar Aplicação Web</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="Arquivos/vertis.jpg">
+            <h3>Vertis</h3>
+            <p>Trata-se de uma aplicação microsservice que surgiu de um projeto da faculdade. Uma aplicação simples onde
+                a função é importar dados de funcionários, seus salários e eventos e por fim, permite exportar o
+                holerite montado em PDF. Desenvolvido com um colega (João Vitor Medrado).</p>
+            <a href="https://vertis-phi.vercel.app/auth" target="_blank">
+                <button>Acessar Aplicação Web</button>
+            </a>
+        </div>
     </div>
 
     <!-- CONTATO -->
-    <section id="contato">
+    <section id="contato" data-aos="fade-up" data-aos-duration="1000">
         <h2>Contato</h2>
         <div class="sobre-box">
-            <p>Entre em contato para projetos, consultorias ou colaborações.</p>
+            <p>Entre em contato para projetos, consultorias ou colaborações.</p><br>
             <p><strong>Email:</strong> <a href="mailto:luizarmendro@gmail.com" target="_blank"
                     aria-label="email">luizarmendro@gmail.com</a></p>
             <p><strong>LinkedIn:</strong> <a
@@ -143,7 +210,16 @@
         © 2025 - Portfólio Luiz Felipe • Todos os direitos reservados.
     </footer>
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
     <script src="\Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         // Animação de entrada dos cards
         const cards = document.querySelectorAll('.card');
@@ -162,6 +238,9 @@
         toggle.addEventListener('click', () => {
             document.body.classList.toggle('light-mode');
         });
+
+        AOS.init();
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 </body>
 

@@ -41,7 +41,7 @@ header {
 }
 
 header img.logo {
-    width: 150px;
+    width: 200px;
     border-radius: 50%;
     opacity: 0.9;
     transition: 0.3s;
@@ -50,6 +50,8 @@ header img.logo {
 header img.logo:hover {
     transform: scale(1.05);
     opacity: 1;
+    border-color: #2388ff;
+    box-shadow: 0 0 18px rgba(35, 136, 255, 0.4);
 }
 
 header h1 {
@@ -130,6 +132,17 @@ section {
 section h2 {
     font-size: 30px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section h2 span {
+    font-size: 1.2rem;
+    color: #6c757d;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
 }
 
 section p {
@@ -149,6 +162,11 @@ section p {
 .sobre-box a {
     text-decoration: none;
     color: #9ba7b5;
+    transition: 0.3s;
+}
+
+.sobre-box a:hover {
+    color: #2388ff;
 }
 
 /* ===== Skills ===== */
@@ -197,6 +215,9 @@ section p {
     transition: 0.3s;
     opacity: 0;
     transform: translateY(20px);
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
 }
 
 .card:hover {
@@ -218,6 +239,13 @@ section p {
     margin-bottom: 10px;
 }
 
+.card p {
+    flex-grow: 1;
+    font-size: 15px;
+    color: #b0bec5;
+    line-height: 1.6;
+}
+
 .card button {
     width: 100%;
     padding: 10px;
@@ -233,6 +261,16 @@ section p {
 
 .card button:hover {
     background: #0b72db;
+}
+
+.card a {
+    margin-top: auto;
+    display: block;
+}
+
+/* ==== Contatos ====*/
+#contato h2 {
+    text-align: center;
 }
 
 /* ===== Footer ===== */
@@ -264,7 +302,8 @@ body.light-mode .redes a {
     color: var(--cor-azul-escuro)
 }
 
-body.light-mode .redes a:hover {
+body.light-mode .redes a:hover,
+body.light-mode .sobre-box a:hover {
     color: #2388ff
 }
 
@@ -300,6 +339,18 @@ body.light-mode .card button {
 body.light-mode footer,
 body.light-mode .sobre-box p {
     color: #555;
+}
+
+body.light-mode .card p,
+body.light-mode .sobre-box a {
+    color: #616161;
+}
+
+body.light-mode header img.logo:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    border-color: #65adff;
+    box-shadow: 0 0 18px rgba(7, 60, 177, 0.4);
 }
 
 /* ---------------------------------------------------------------------------------------------------------- botão rolar até o início */
